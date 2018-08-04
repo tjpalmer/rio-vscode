@@ -1,7 +1,7 @@
 {
     "name": "rio",
     "displayName": "Rio",
-    "description": "Rio language support",
+    "description": "Rio language support for VS Code",
     "version": "0.0.1",
     "publisher": "tjpalmer",
     "engines": {
