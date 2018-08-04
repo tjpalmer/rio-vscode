@@ -1,0 +1,26 @@
+{
+    "name": "rio",
+    "displayName": "Rio",
+    "description": "Rio language support",
+    "version": "0.0.1",
+    "publisher": "tjpalmer",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "rio",
+            "aliases": ["Rio", "rio"],
+            "extensions": [".rio"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "rio",
+            "scopeName": "source.rio",
+            "path": "./syntaxes/rio.tmLanguage.json"
+        }]
+    }
+}

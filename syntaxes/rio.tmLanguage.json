@@ -1,0 +1,64 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Rio",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+          "name": "comment.line.rio",
+          "begin": "//",
+          "end": "$"
+        },
+				{
+          "name": "comment.multiline.rio",
+          "begin": "/\\*",
+					"end": "\\*/",
+					"patterns": [
+						{
+							"include": "#comments"
+						}
+					]
+        }
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.rio",
+					"match": "\\b(if|for|return|switch|while)\\b"
+				},
+				{
+					"name": "keyword.decl.rio",
+					"match": "\\b(const|enum|fn|let|struct|union)\\b"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.rio",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.rio",
+							"match": "\\\\."
+						}
+					]
+				}
+			]
+		}
+	},
+	"scopeName": "source.rio"
+}
