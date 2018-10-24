@@ -55,7 +55,7 @@
 				},
 				{
 					"name": "keyword.decl.rio",
-					"match": "\\b(const|enum|fn|import|let|mut|own|struct|typedef|union)\\b"
+					"match": "\\b(as|const|def|enum|fn|import|let|mut|own|struct|typedef|union)\\b"
 				},
 				{
 					"name": "meta.function.rio",
