@@ -20,7 +20,7 @@
 			"patterns": [
 				{
           "name": "comment.line.rio",
-          "begin": "//",
+          "begin": "//|#",
           "end": "$"
         },
 				{
@@ -47,15 +47,15 @@
 			"patterns": [
 				{
 					"name": "constant.language.rio",
-					"match": "\\b(false|NULL|true)\\b"
+					"match": "\\b(false|null|NULL|true|void)\\b"
 				},
 				{
 					"name": "keyword.control.rio",
-					"match": "\\b(break|case|continue|default|do|else|if|for|goto|return|switch|while)\\b"
+					"match": "\\b(break|case|continue|default|do|else|end|if|for|goto|return|switch|while)\\b"
 				},
 				{
 					"name": "keyword.decl.rio",
-					"match": "\\b(as|const|def|enum|fn|import|let|mut|own|struct|typedef|union)\\b"
+					"match": "\\b(as|const|def|enum|fn|fun|import|let|mut|own|proc|struct|typedef|union|use|var)\\b"
 				},
 				{
 					"name": "meta.function.rio",
